@@ -1,6 +1,5 @@
 
 # Dog Breed Classification using Convolutional Neural Network (CNN)
-## [Project.ipynb](https://github.com/dubemmmm/Convolutional-Neural-Network/blob/main/Project.ipynb)
 ## Overview
 This project utilizes a Convolutional Neural Network (CNN) and transfer learning to classify dog breeds. The model is trained on a dataset containing images of various dog breeds, and it can predict the breed of a given dog image.
 
