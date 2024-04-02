@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breed Identifier</title>
+  <link rel="stylesheet" href="{% static 'dog/css/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h1>Dog Breed Identifier</h1>
+    <form method="post" id="uploadForm" enctype="multipart/form-data">
+      <label for="uploadInput" class="uploadLabel">Upload an image of your dog:</label>
+      {% csrf_token %}
+        {{ form }}
+        <div id="imagePreview" class="hidden"></div>
+        <div id="result" class="hidden"></div>
+        <button type="submit" style='margin-top:20px;'>Identify Breed</button>
+    </form>    
+  </div>
+  <script src="{% static 'dog/js/script.js' %}"></script>
+</body>
+</html>

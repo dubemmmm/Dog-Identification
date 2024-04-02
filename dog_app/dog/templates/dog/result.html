@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dog Breed Identifier</title>
+  <link rel="stylesheet" href="{% static 'dog/css/style.css' %}">
+</head>
+<body>
+  <div class="container">
+    <h2>Predicted item:</h2>
+    <p>{{ breed }}</p>
+  </div>
+<script src="{% static 'dog/js/script.js' %}"></script>
+</body>
+</html>
+  
